@@ -12,9 +12,9 @@ else
 end
 
 puts '{'
-puts '  "title": '    + sprintf('"%s"', yt.title) + '.'
+puts '  "title": '    + sprintf('"%s"', yt.title) + ','
 puts '  "icon": '     + sprintf('"%s"', yt.icon)  + ','
 puts '  "status": '   + sprintf('"%s"', yt.status)+ ','
 puts '  "info": '     + sprintf('"%s"', yt.info)  + ',' 
-puts '  "message": '  + sprintf('"%s"', message)  + ','
+puts '  "message": '  + sprintf('"%s"', message)
 puts '}'
