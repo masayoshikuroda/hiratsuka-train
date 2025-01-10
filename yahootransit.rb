@@ -12,8 +12,6 @@ class YahooTransit
     html = URI.open(url) do |f| f.read end
     page = Nokogiri::HTML.parse(html, nil, 'UTF-8')
     
-    p page.css("div#mdServiceStatus > dl > dt").inner_text
-
     @title = page.css("h1.title").inner_text
     text = page.css("div#mdServiceStatus > dl > dt").inner_text
     @icon = page.css("div#mdServiceStatus > dl > dt > span").first.attr('class')
